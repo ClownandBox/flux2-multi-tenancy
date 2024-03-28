@@ -6,9 +6,9 @@ metadata:
   namespace: helm-test2
 spec:
   interval: 1m0s
+  url: https://github.com/GitHubforGitLab/flux2-multi-tenancy
   ref:
     branch: helm-test2
-  url: https://github.com/GitHubforGitLab/flux2-multi-tenancy
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
