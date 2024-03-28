@@ -19,7 +19,7 @@ kind: RoleBinding
 metadata:
   labels:
     toolkit.fluxcd.io/tenant: helm-test2
-  name: helm-test1-reconciler
+  name: helm-test2-reconciler
   namespace: helm-test2
 roleRef:
   apiGroup: rbac.authorization.k8s.io
