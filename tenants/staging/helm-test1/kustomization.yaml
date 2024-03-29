@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: helm-test1
+resources:
+  - ../../base/helm-test1
+patches:
+  - path: helm-test1-patch.yaml
