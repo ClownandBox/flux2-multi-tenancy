@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: hlem-test1
+  name: helm-test1
   namespace: helm-test1
 spec:
   interval: 1m0s
