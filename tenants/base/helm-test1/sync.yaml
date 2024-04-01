@@ -18,7 +18,7 @@ metadata:
 spec:
   interval: 1m0s
   path: ./
-  prune: false
+  prune: true
   serviceAccountName: helm-test1
   sourceRef:
     kind: GitRepository
