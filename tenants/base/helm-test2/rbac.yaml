@@ -3,24 +3,24 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    toolkit.fluxcd.io/tenant: helm-test1
-  name: helm-test1
+    toolkit.fluxcd.io/tenant: helm-test2
+  name: helm-test2
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:
-    toolkit.fluxcd.io/tenant: helm-test1
-  name: helm-test1
-  namespace: helm-test1
+    toolkit.fluxcd.io/tenant: helm-test2
+  name: helm-test2
+  namespace: helm-test2
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   labels:
-    toolkit.fluxcd.io/tenant: helm-test1
-  name: helm-test1-reconciler
-  namespace: helm-test1
+    toolkit.fluxcd.io/tenant: helm-test2
+  name: helm-test2-reconciler
+  namespace: helm-test2
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -28,7 +28,7 @@ roleRef:
 subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
-  name: gotk:helm-test1:reconciler
+  name: gotk:helm-test2:reconciler
 - kind: ServiceAccount
-  name: helm-test1
-  namespace: helm-test1
+  name: helm-test2
+  namespace: helm-test2
