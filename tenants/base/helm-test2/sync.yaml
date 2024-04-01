@@ -8,7 +8,7 @@ spec:
   interval: 1m0s
   ref:
     branch: helm-test2
-  url: https://github.com/GitHubforCitLab/flux2-multi-tenancy
+  url: https://github.com/GitHubforGitLab/flux2-multi-tenancy
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
